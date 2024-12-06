@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-#include "Die Class/Die.h"
+#include "Die.h"
 #include "Player.h"
 #include "Yahtzee.h"
 

@@ -19,16 +19,38 @@ public:
     Yahtzee();
     Yahtzee(vector<string> names);
 
+    vector<Die> getDice();
+
     // Helper Functions
     void addPlayer(string name);
     void rollDice();
+    Player getPlayer();
 
     // Solving Functions
-    void CalculateScore(vector<Die> dice);
+    void findPossibleScores(vector<Die> dice);
+
+    void findThreeOfAKind();
+    void findFourOfAKind();
+
+
 private:
     vector<Player> players;
     int turn;
-    int;
+
+    // For all adding examples
+    int addDice(int number);
+
+    // Calulating scores of various wins
+    int threeOfAKind();
+    int fourOfAKind();
+    int fullHouse();
+    int smallStraight();
+    int largeStraight();
+    int yahtzee();
+
+    int chance();
+
+    void sortDice();
 };
 
 #endif //YAHTZEE_H

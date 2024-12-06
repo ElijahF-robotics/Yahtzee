@@ -125,3 +125,10 @@ vector<string> Die::getPrintStrings() const {
 
     return returnVector;
 }
+
+bool operator ==(Die die1, Die die2) {
+    if (die1.faceValue == die2.faceValue) {
+        return true;
+    }
+    return false;
+}

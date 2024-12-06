@@ -24,6 +24,8 @@ public:
     void print() const;
 
     vector<string> getPrintStrings() const;
+
+    friend bool operator ==(Die die1, Die die2);
 private:
     int faceValue;
     int sides;
